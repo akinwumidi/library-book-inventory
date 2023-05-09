@@ -1,0 +1,36 @@
+.main-theme {
+  --header-color: #fff;
+  --text-color: #1f1f1f;
+  --main-color: rgb(68, 122, 222);
+  --main-color2: #0b57d0;
+  --white-color: rgba(255, 255, 255, 0.87);
+  --black-color: #000;
+  --sucess-color: rgb(0, 128, 0, 1);
+  --danger-color: tomato;
+  --backdrop: rgba(255, 255, 255, 0.1);
+  --navigation: #fff;
+  --shadow: 0 2px 3px 0 rgba(48, 48, 48, 0.3),
+    0 6px 10px 4px rgba(48, 48, 48, 0.15);
+  --transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0s linear 0s;
+  height: 3500px;
+}
+.dark-theme {
+  --header-color: rgba(32, 33, 36, 1);
+  --text-color: #c4c7c5;
+  --main-color: rgb(68, 122, 222);
+  --main-color2: #a8c7fa;
+  --white-color: rgba(255, 255, 255, 0.87);
+  --black-color: #000;
+  --sucess-color: rgb(0, 128, 0, 1);
+  --danger-color: tomato;
+  --backdrop: rgba(255, 255, 255, 0.1);
+  --navigation: #2c2c2c;
+  --shadow: 0 2px 3px 0 rgba(48, 48, 48, 0.3),
+    0 6px 10px 4px rgba(48, 48, 48, 0.15);
+  --transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0s linear 0s;
+
+  background: black;
+  height: 3500px;
+}

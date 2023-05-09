@@ -1,0 +1,77 @@
+// Hamburger starts here
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 var(--main-color), 0 0 0 0 var(--main-color);
+  }
+
+  80% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0), 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20 var(--main-color), 0 0 0 40 var(--main-color);
+  }
+}
+
+.hamburger-menu {
+  z-index: 5;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 2rem;
+  height: 2rem;
+  z-index: 100;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-color);
+  transition: all 0.5s ease-in-out;
+  animation: ripple 2s infinite;
+
+  &:hover {
+    transform: translateY(3px);
+  }
+  .bar {
+    position: relative;
+    width: 1rem;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.5s;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 1.1rem;
+      height: 3px;
+      border-radius: 3px;
+      background-color: #fff;
+      transition: 0.5s;
+    }
+
+    &:before {
+      transform: translateY(-6px);
+    }
+    &:after {
+      transform: translateY(6px);
+    }
+  }
+}
+.transform-menu .hamburger-menu {
+  background: var(--main-color);
+}
+.transform-menu .bar {
+  background-color: transparent;
+  transform: rotate(360deg);
+}
+
+.transform-menu .bar:before {
+  transform: translateY(0) rotate(45deg);
+  background-color: var(--white-color);
+}
+.transform-menu .bar:after {
+  transform: translateY(0) rotate(-45deg);
+  background-color: var(--white-color);
+}
+
+// Hamburger ends here
