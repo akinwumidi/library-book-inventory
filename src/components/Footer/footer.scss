@@ -1,0 +1,48 @@
+footer {
+  color: var(--text-color);
+  background: var(--blue-gradient);
+  padding: 20px 0;
+
+  .brand-name {
+    display: block;
+    font-weight: 700;
+    font-size: 23px;
+    span {
+      color: var(--main-color);
+      display: inline-block;
+      padding: 0 3px;
+      border: 1.5px solid var(--main-color);
+    }
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  // padding: 10px;
+  font-weight: 300;
+  font-size: 16px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      font-weight: 500;
+      font-size: 15px;
+      text-decoration: none;
+      color: var(--text-color);
+      display: block;
+      padding: 5px 10px;
+    }
+  }
+}
+
+.colcontainer {
+  width: 100%;
+  height: 100%;
+}
